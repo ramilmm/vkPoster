@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/vkPoster
+    username: postgres
+    password: 0912480a
+  jpa:
+    properties:
+      hibernate:
+        ddl-auto: create-drop
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+        show_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+
+flyway:
+  url: jdbc:postgresql://localhost:5432/vkPoster
+  user: postgres
+  password: 0912480a
+server:
+  port: 8080
